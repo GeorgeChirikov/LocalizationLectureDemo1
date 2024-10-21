@@ -54,7 +54,7 @@
                     <archive>
                         <manifest>
                             <!-- Specify the fully qualified Main class -->
-                            <mainClass>LocalizedGreeting</mainClass>
+                            <mainClass>LocalizationDemo</mainClass>
                         </manifest>
                     </archive>
                 </configuration>
