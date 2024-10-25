@@ -32,6 +32,14 @@ public class LocalizationDemoTest {
     }
 
     @Test
+    public void testFarsiGreeting() {
+        Locale locale = new Locale("fa", "IR");
+        ResourceBundle messages = ResourceBundle.getBundle("Message", locale);
+        String greeting = messages.getString("greeting");
+        assertEquals("سلام! به برنامه ما خوش آمدید", greeting);
+    }
+
+    @Test
     public void testInvalidChoiceDefaultsToEnglish() {
         Locale locale = new Locale("en", "UK"); // Simulate default choice
         ResourceBundle messages = ResourceBundle.getBundle("Message", locale);
